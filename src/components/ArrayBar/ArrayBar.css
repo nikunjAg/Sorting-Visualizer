@@ -1,0 +1,39 @@
+.ArrayBar {
+	background-color: #4286f4cc;
+	color: #fff;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 5px;
+	width: 1.8%;
+}
+
+.ArrayBar.Sorting {
+	background-color: #d2b4de;
+}
+
+.ArrayBar.Comparing {
+	background-color: #d33636cc;
+}
+
+.ArrayBar.Sorted {
+	background-color: #7dcea0;
+}
+
+@media (max-width: 700px) {
+	.ArrayBar {
+		width: 1.5%;
+	}
+}
+
+@media (max-width: 600px) {
+	.ArrayBar {
+		width: 1.3%;
+	}
+}
+
+@media (max-width: 500px) {
+	.ArrayBar {
+		width: 1%;
+	}
+}

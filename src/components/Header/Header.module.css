@@ -1,0 +1,134 @@
+.Header {
+	padding: 0.5rem 1rem;
+	background-color: #000;
+	color: white;
+}
+
+.Row1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Row2 {
+	padding-top: 10px;
+}
+
+.Logo {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #faec27;
+	text-shadow: 0px 2px 4px rgba(212, 24, 24, 0.2);
+}
+
+.HeaderItem {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	color: #fff;
+}
+
+.HeaderItem:disabled {
+	color: #999 !important;
+	cursor: not-allowed !important;
+}
+
+.GenerateArrBtn {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 0.3rem 0.6rem;
+	transition: all 0.2s ease;
+}
+
+.GenerateArrBtn:hover {
+	border-color: orange;
+}
+
+.Algorithms {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Algorithms .AlgorithmLabel {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.Algorithms .Algos {
+	flex: 0.75;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Algorithm {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	padding: 4px 8px;
+	color: #fff;
+}
+
+.Algorithm.Selected {
+	color: #f399d8;
+	border-color: #ccc;
+}
+
+.Algorithm .HeaderItem {
+	color: inherit;
+}
+
+.HeaderItem:hover {
+	color: orange;
+}
+
+.Algorithm .MoreInfoButton {
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.Algorithm .MoreInfoButton:hover {
+	color: orange;
+}
+
+.SortBtn {
+	font-size: 0.8rem;
+	font-weight: 600;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid orange;
+	border-radius: 5px;
+	padding: 0.4rem 0.7rem;
+	background-color: #000;
+	color: #fff;
+}
+
+.SortBtn:hover {
+	background-color: #e67e22;
+	border-color: #e67e22;
+	color: #fff;
+}
+
+.SortBtn:disabled {
+	cursor: not-allowed;
+	background-color: #9c9c9c;
+	border-color: #9c9c9c;
+	color: #444;
+}
+
+@media (max-width: 700px) {
+	.Algorithms .Algos {
+		flex: 0.9;
+		flex-wrap: wrap;
+	}
+}
